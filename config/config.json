@@ -1,0 +1,45 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/spfx-build/config.2.0.schema.json",
+  "version": "2.0",
+  "bundles": {
+    "report-app-web-part": {
+      "components": [
+        {
+          "entrypoint": "./lib/webparts/reportApp/ReportAppWebPart.js",
+          "manifest": "./src/webparts/reportApp/ReportAppWebPart.manifest.json"
+        }
+      ]
+    },
+    "report-app-manager-web-part": {
+      "components": [
+        {
+          "entrypoint": "./lib/webparts/reportAppManager/ReportAppManagerWebPart.js",
+          "manifest": "./src/webparts/reportAppManager/ReportAppManagerWebPart.manifest.json"
+        }
+      ]
+    },
+    "report-app-admin-web-part": {
+      "components": [
+        {
+          "entrypoint": "./lib/webparts/reportAppAdmin/ReportAppAdminWebPart.js",
+          "manifest": "./src/webparts/reportAppAdmin/ReportAppAdminWebPart.manifest.json"
+        }
+      ]
+    },
+    "report-app-pm-web-part": {
+      "components": [
+        {
+          "entrypoint": "./lib/webparts/reportAppPm/ReportAppPmWebPart.js",
+          "manifest": "./src/webparts/reportAppPm/ReportAppPmWebPart.manifest.json"
+        }
+      ]
+    }
+  },
+  "externals": {},
+  "localizedResources": {
+    "ReportAppWebPartStrings": "lib/webparts/reportApp/loc/{locale}.js",
+    "ReportAppManagerWebPartStrings": "lib/webparts/reportAppManager/loc/{locale}.js",
+    "ReportAppAdminWebPartStrings": "lib/webparts/reportAppAdmin/loc/{locale}.js",
+    "ReportAppPmWebPartStrings": "lib/webparts/reportAppPm/loc/{locale}.js"
+  }
+}
